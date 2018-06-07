@@ -6,8 +6,17 @@ module.exports = {
     title: 'mello-yello',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Website of mello-yello in priconne.' }
+      { hid: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'site_name', content: 'メロウイエロー' },
+      { hid: 'description', name: 'description', content: 'Website of メロウイエロー clans in "princess connect re:dive".' },
+      { hid: 'image', content: 'https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg' },
+      { hid: 'google-site-verification', content: 'iGhRc61DwuR7ZSRhxXiZe9PT10azGlsZ51_OtyVzXbE' },
+      { hid: 'og:type', content: 'website' },
+      { hid: 'og:site_name', content: 'メロウイエロー' },
+      { hid: 'og:title', content: 'メロウイエロー' },
+      { hid: 'og:description', content: 'Website of メロウイエロー clans in "princess connect re:dive".' },
+      { hid: 'og:url', content: 'https://mello-yello.co' },
+      { hid: 'og:image', content: 'https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
