@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 .my-background {
-  background-image: url(https://ne-peer.ams3.digitaloceanspaces.com/resource/melloyello-unsplash-min-blur.jpg);
+  background-image: url(~/assets/img/background-blur.jpg);
   height: 100vh;
 }
 </style>
