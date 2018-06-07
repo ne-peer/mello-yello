@@ -15,12 +15,15 @@ module.exports = {
   },
   css: [
     'assets/main.css',
-    'node_modules/uikit/dist/css/uikit.min.css'
+    { src: '~assets/uikit.scss', lang: 'scss' }
+  ],
+  plugins: [
+    { src: '~plugins/uikit.bundle', ssr: false }
   ],
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#F9ED3A' },
+  loading: { color: '#FFD600' },
   /*
   ** Build configuration
   */

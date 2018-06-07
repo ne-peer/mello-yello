@@ -12,6 +12,7 @@
                             <h3 class="uk-card-title">Hi Deck!</h3>
                             <p>Welcome to
                                 <a href="mello-yello.co">mello-yello.co</a>!!</p>
+                                <nuxt-link to="/" tag="button" class="uk-button-primary"><span class="uk-padding">top</span></nuxt-link>
                         </div>
                     </div>
                 </div>
