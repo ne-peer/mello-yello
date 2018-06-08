@@ -11,7 +11,21 @@
                         <p>Welcome to <a href="mello-yello.co">mello-yello.co</a>!!</p>
                     </div>
                 </div>
+
+                <div>
+                  <member-list></member-list>
+                </div>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+import MemberList from "~/components/MemberList.vue";
+
+export default {
+  components: {
+    MemberList
+  }
+};
+</script>
