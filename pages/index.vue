@@ -13,9 +13,9 @@
                     </div>
                 </div>
 
-                <!-- <div>
+                <div class="uk-margin-large">
                   <member-list></member-list>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>

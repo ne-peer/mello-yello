@@ -1,12 +1,24 @@
 <template>
-  <v-expansion-panel popout>
-    <v-expansion-panel-content v-for="mem of members" :key="mem.id" class="panel-title">
-      <div slot="header">{{ mem.name }}</div>
-      <v-card>
-        <v-card-text class="uk-text-meta">{{ mem.desc }}</v-card-text>
-      </v-card>
-    </v-expansion-panel-content>
-  </v-expansion-panel>
+  <div>
+    <div class="uk-card uk-card-default uk-card-body">
+      <table class="uk-table uk-table-small uk-table-divider">
+          <thead>
+              <tr>
+                  <th class="uk-table-shrink">Join</th>
+                  <th class="uk-table-expand">Name</th>
+                  <th class="uk-table-small" style="padding-left:32px"><span uk-icon="icon: twitter"></span></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr v-for="(mem, k) in members" :key="k" class="uk-text-meta">
+                  <td>{{ mem.date }}</td>
+                  <td class="uk-text-left">{{ mem.name }}</td>
+                  <td class="uk-text-left"><a href="https://twitter.com/{ mem.tw }" target="_blank">@{{ mem.tw }}</a></td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -15,22 +27,25 @@ export default {
     return {
       members: [
         {
-          id: 1,
           name: "でっく",
+          date: "Founder",
+          tw: "DiiiSPACE",
           desc:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-          id: 2,
           name: "くま",
+          date: "Founder",
+          tw: "kumama100",
           desc:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-          id: 3,
           name: "あやねる松本",
+          date: "Founder",
+          tw: "ne_peer",
           desc:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
       ]
     };

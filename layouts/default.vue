@@ -51,7 +51,7 @@ export default {
   /* max-width: 640px; */
   height: 100%;
   margin: 0 auto;
-  padding: 100px 10px 120px;
+  padding: 40px 10px 120px;
   color: #fff;
   text-align: center;
 }
