@@ -30,7 +30,7 @@ export default {
   content: '';
   position: absolute;
   top: -20px;
-  left: -20px;
+  left: -40px;
   width: 140%;
   height: 80%;
   margin: 3% -10% 0;

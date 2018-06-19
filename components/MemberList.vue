@@ -4,16 +4,16 @@
       <table class="uk-table uk-table-small uk-table-divider">
           <thead>
               <tr>
-                  <th class="uk-table-shrink">Join</th>
-                  <th class="uk-table-expand">Name</th>
+                  <th class="uk-table-small uk-text-center">Join</th>
+                  <th class="">Name</th>
                   <th class="uk-table-small" style="padding-left:32px"><span uk-icon="icon: twitter"></span></th>
               </tr>
           </thead>
           <tbody>
-              <tr v-for="(mem, k) in members" :key="k" class="uk-text-meta">
+              <tr v-for="(mem, k) in members" :key="k" class="my-fontsize">
                   <td>{{ mem.date }}</td>
-                  <td class="uk-text-left">{{ mem.name }}</td>
-                  <td class="uk-text-left"><a href="https://twitter.com/{ mem.tw }" target="_blank">@{{ mem.tw }}</a></td>
+                  <td class="uk-text-meta uk-text-left">{{ mem.name }}</td>
+                  <td class="uk-text-meta uk-text-left my-fontsize"><a :href="'https://twitter.com/' + mem.tw" target="_blank">@{{ mem.tw }}</a></td>
               </tr>
           </tbody>
       </table>
@@ -57,5 +57,10 @@ export default {
 .panel-title {
   font-size: 16px;
   color: #eee;
+}
+
+.my-fontsize {
+  vertical-align: middle;
+  font-size: 12px;
 }
 </style>

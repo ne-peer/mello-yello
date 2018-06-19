@@ -15,8 +15,7 @@
   "dependencies": {
     "material-design-icons-iconfont": "^3.0.3",
     "nuxt": "^1.0.0",
-    "uikit": "^3.0.0-rc.5",
-    "vuetify": "^1.0.19"
+    "uikit": "^3.0.0-rc.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
