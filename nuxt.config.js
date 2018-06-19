@@ -28,7 +28,7 @@ module.exports = {
   ],
   plugins: [
     { src: '~plugins/uikit.bundle', ssr: false },
-    { src: '~plugins/vuetify', ssr: false }
+    // { src: '~plugins/vuetify', ssr: false }
   ],
   /*
   ** Customize the progress bar color
