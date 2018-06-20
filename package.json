@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "material-design-icons-iconfont": "^3.0.3",
     "nuxt": "^1.0.0",
     "uikit": "^3.0.0-rc.5"
   },
@@ -24,5 +25,11 @@
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.3"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3001"
+    }
   }
 }

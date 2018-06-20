@@ -1,17 +1,55 @@
 <template>
-    <div class="uk-container">
-        <div class="uk-margin-top uk-flex-center uk-child-width-1-2@m" uk-grid>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg" alt="mello-yello">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Hi Deck!</h3>
-                        <p>Welcome to <a href="mello-yello.co">mello-yello.co</a>!!</p>
-                    </div>
-                </div>
+    <div>
+
+      <div class="uk-container-expand slope-bgc">
+        <div class="slope-bgc-inner">
+          <div class="uk-flex-center" uk-grid>
+            <div class="uk-width-1-2@s" style="padding-right:20px">
+              <header>
+                <my-navbar></my-navbar>
+              </header>
+
+              <div>
+                <welcome></welcome>
+              </div>
+
+              <div class="uk-margin-large-top">
+                <member-list></member-list>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+
+      <div class="uk-container-expand uk-flex-center uk-padding-small bgc-section-one" uk-grid>
+        <div class="uk-width-2-3@s">
+          <div>
+            <clan-rank></clan-rank>
+          </div>
+        </div>
+      </div>
+
     </div>
 </template>
+
+<script>
+import MyNavbar from "~/components/MyNavbar.vue";
+import Welcome from "~/components/Welcome.vue";
+import MemberList from "~/components/MemberList.vue";
+import ClanRank from "~/components/ClanRank.vue";
+
+export default {
+  components: {
+    MyNavbar,
+    Welcome,
+    MemberList,
+    ClanRank
+  }
+};
+</script>
+
+<style scoped>
+.bgc-section-one {
+  /* background-color: #FFFDE7; */
+}
+</style>

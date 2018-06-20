@@ -6,7 +6,7 @@ module.exports = {
     title: 'mello-yello',
     meta: [
       { charset: 'utf-8' },
-      { hid: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'site_name', content: 'メロウイエロー' },
       { hid: 'description', name: 'description', content: 'Website of メロウイエロー clans in "princess connect re:dive".' },
       { hid: 'image', content: 'https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg' },
@@ -27,7 +27,8 @@ module.exports = {
     { src: '~assets/uikit.scss', lang: 'scss' }
   ],
   plugins: [
-    { src: '~plugins/uikit.bundle', ssr: false }
+    { src: '~plugins/uikit.bundle', ssr: false },
+    // { src: '~plugins/vuetify', ssr: false }
   ],
   /*
   ** Customize the progress bar color

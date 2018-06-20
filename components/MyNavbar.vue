@@ -1,7 +1,7 @@
 <template>
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-center">
-            <nuxt-link to="/" tag="a" class="uk-navbar-item uk-logo my-logo">Mellow yellow</nuxt-link>
+            <nuxt-link to="/" tag="a" class="uk-navbar-item uk-logo my-logo">Mellow Yellow</nuxt-link>
         </div>
     </nav>
 </template>

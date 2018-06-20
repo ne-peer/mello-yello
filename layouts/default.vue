@@ -1,25 +1,21 @@
 <template>
-    <div class="uk-background-cover my-background">
-        <header>
-            <my-navbar></my-navbar>
-        </header>
+    <div>
         <nuxt/>
+
+        <footer>
+            <my-footer></my-footer>
+        </footer>
     </div>
 </template>
 
 <script>
 import MyNavbar from "~/components/MyNavbar.vue";
+import MyFooter from "~/components/MyFooter.vue";
 
 export default {
   components: {
-    MyNavbar
+    MyNavbar,
+    MyFooter
   }
 };
 </script>
-
-<style scoped>
-.my-background {
-  background-image: url(~/assets/img/background-blur.jpg);
-  height: 100vh;
-}
-</style>
