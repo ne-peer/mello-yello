@@ -7,8 +7,12 @@
                   <welcome></welcome>
                 </div>
 
-                <div class="uk-margin-large">
+                <div class="uk-margin-large-top">
                   <member-list></member-list>
+                </div>
+
+                <div class="uk-margin-small">
+                  <clan-rank></clan-rank>
                 </div>
 
             </div>
@@ -19,10 +23,11 @@
 <script>
 import Welcome from "~/components/Welcome.vue";
 import MemberList from "~/components/MemberList.vue";
+import ClanRank from "~/components/ClanRank.vue";
 
 export default {
   components: {
-    Welcome, MemberList
+    Welcome, MemberList, ClanRank
   }
 };
 </script>

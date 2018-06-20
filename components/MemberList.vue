@@ -1,6 +1,8 @@
 <template>
   <div>
     <div class="uk-card uk-card-default uk-card-body my-radius">
+      <h3 class="my-heading-color">Members</h3>
+
       <!-- for Smartphone -->
       <div class="uk-hidden@s">
         <table class="uk-table uk-table-small uk-table-divider">
