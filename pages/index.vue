@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <div class="uk-container-expand uk-flex-center uk-padding-small" uk-grid>
+      <div class="uk-container-expand uk-flex-center uk-padding-small bgc-section-one" uk-grid>
         <div class="uk-width-1-2@s">
           <div>
             <clan-rank></clan-rank>
@@ -47,3 +47,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.bgc-section-one {
+  background-color: #FFFDE7;
+}
+</style>
