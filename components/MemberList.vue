@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="uk-card uk-card-default uk-card-body">
+    <div class="uk-card uk-card-default uk-card-body my-radius">
       <table class="uk-table uk-table-small uk-table-divider">
           <thead>
               <tr>

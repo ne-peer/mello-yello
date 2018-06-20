@@ -1,0 +1,7 @@
+.my-radius {
+  border-radius: 15px;
+}
+
+.my-radius-top {
+  border-radius: 15px 15px 0px 0px;
+}
