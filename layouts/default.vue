@@ -1,25 +1,38 @@
 <template>
-    <section class="contents">
-        <div class="contents_inner">
-            <header>
-                <my-navbar></my-navbar>
-            </header>
-            <nuxt/>
-        </div>
-    </section>
+    <div class="outer">
+        <section class="contents">
+            <div class="contents_inner">
+                <header>
+                    <my-navbar></my-navbar>
+                </header>
+
+                <nuxt/>
+
+                <!-- <footer>
+                    <my-footer></my-footer>
+                </footer> -->
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
 import MyNavbar from "~/components/MyNavbar.vue";
+import MyFooter from "~/components/MyFooter.vue";
 
 export default {
   components: {
-    MyNavbar
+    MyNavbar,
+    MyFooter
   }
 };
 </script>
 
 <style scoped>
+.outer {
+  height: 2800px;
+}
+
 .contents {
   position: relative;
   overflow: hidden;
@@ -27,7 +40,7 @@ export default {
 }
 
 .contents:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -20px;
   left: -40px;
