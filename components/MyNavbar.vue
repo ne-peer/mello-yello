@@ -11,6 +11,5 @@
   color: #FFF9C4;
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   letter-spacing: 1px;
-  padding-right: 34px;
 }
 </style>
