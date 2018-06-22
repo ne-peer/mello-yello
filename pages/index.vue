@@ -12,13 +12,13 @@
               <div>
                 <welcome></welcome>
               </div>
-
-              <div class="uk-margin-large-top">
-                <member-list></member-list>
-              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="uk-container-expand">
+          <member-list></member-list>
       </div>
 
       <div class="uk-container-expand uk-flex-center uk-padding-small bgc-section-one" uk-grid>

@@ -1,48 +1,25 @@
 <template>
-  <div>
-    <div class="uk-card uk-card-default uk-card-body my-radius">
-      <h3 class="my-heading-color">Members</h3>
+  <div class="uk-padding-small">
 
-      <!-- for Smartphone -->
-      <div class="uk-hidden@s">
-        <table class="uk-table uk-table-small uk-table-divider">
-          <thead>
-              <tr>
-                  <th class="my-th uk-text-center uk-table-small">Join</th>
-                  <th class="my-th uk-text-center uk-table-expand">Name</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr v-for="(mem, k) in members" :key="k" class="names">
-                  <td class="my-text-join">{{ mem.date }}</td>
-                  <td class="uk-text-left">{{ mem.name }}
+    <div class="uk-grid-small uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+      <div v-for="(mem, k) in members" :key="k">
+        <div class="uk-card uk-card-default my-radius">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="40" height="40" :src="'https://avatars.io/twitter/' + mem.tw">
+              </div>
+              <div class="uk-width-expand">
+                  <h3 class="uk-card-title uk-margin-remove-bottom">{{ mem.name }}</h3>
+                  <p class="uk-margin-remove-top">
+                    <span class="uk-text-meta">{{ mem.date }}</span>
+                    <span class="icon-minus" uk-icon="icon: minus; ratio: 0.6"></span>
                     <a :href="'https://twitter.com/' + mem.tw" target="_blank" class="tw">@{{ mem.tw }}</a>
-                  </td>
-              </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- for Desktop -->
-      <div class="uk-visible@s">
-        <table class="uk-table uk-table-small uk-table-divider">
-          <thead>
-              <tr>
-                  <th class="my-th uk-text-center uk-table-small">Join</th>
-                  <th class="my-th">Name</th>
-                  <th class="my-th uk-text-center uk-table-small">
-                    <span uk-icon="icon: twitter; ratio: 0.7"></span>
-                  </th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr v-for="(mem, k) in members" :key="k" class="names">
-                  <td class="my-text-join">{{ mem.date }}</td>
-                  <td class="uk-text-left">{{ mem.name }}</td>
-                  <td><a :href="'https://twitter.com/' + mem.tw" target="_blank" class="tw">@{{ mem.tw }}</a></td>
-              </tr>
-          </tbody>
-        </table>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -94,7 +71,12 @@ export default {
   color: #bfbfbf;
 }
 
+.icon-minus {
+  padding: 0px 10px;
+  color: #aaa;
+}
+
 a.tw {
-  font-size: 7px;
+  font-size: 12px;
 }
 </style>

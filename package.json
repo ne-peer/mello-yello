@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "material-design-icons": "^3.0.1",
     "material-design-icons-iconfont": "^3.0.3",
     "nuxt": "^1.0.0",
     "uikit": "^3.0.0-rc.5"
