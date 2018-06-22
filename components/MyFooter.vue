@@ -1,13 +1,17 @@
 <template>
   <div class="common">
-    <p class="uk-text-center">This page by @ne_peer</p>
+    <p class="uk-text-center">
+      <a href="https://github.com/ne-peer" uk-icon="github"></a>
+    </p>
+
   </div>
 </template>
 
 <style scoped>
 .common {
-  background-color: #FFD54F;
-  color: #fff9c4;
-  padding: 60px 0px 4px 0px;
+  background-color: #fee140;
+  color: #ffffff;
+  padding: 30px 0px 4px 0px;
+  font-size: 8px;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="uk-padding uk-panel">
-        <h3 class="my-heading-color uk-text-center">Ranking</h3>
+        <h3 class="my-heading-color uk-text-center"></h3>
         <table class="uk-table uk-table-divider uk-table-striped">
-            <caption>2018</caption>
+            <caption><span uk-icon="icon: bookmark; ratio:1.3"></span> 2018</caption>
             <thead>
                 <tr>
                     <th class="uk-text-center">Month</th>
@@ -26,9 +26,9 @@ export default {
   data() {
     return {
       transitions: [
-        { month: "06", rank: "4000", trans: "arrow-up" },
-        { month: "05", rank: "6000", trans: "arrow-up" },
-        { month: "04", rank: "7000", trans: "bookmark" }
+        { month: "6", rank: "4000", trans: "arrow-up" },
+        { month: "5", rank: "6000", trans: "arrow-up" },
+        { month: "4", rank: "7000", trans: "arrow-up" }
       ]
     };
   }

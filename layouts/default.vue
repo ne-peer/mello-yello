@@ -2,7 +2,7 @@
     <div>
         <nuxt/>
 
-        <footer>
+        <footer class="uk-margin-large-top">
             <my-footer></my-footer>
         </footer>
     </div>
