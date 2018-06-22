@@ -1,9 +1,9 @@
 .my-radius {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .my-radius-top {
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .my-heading-color {

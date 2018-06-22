@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="uk-padding uk-panel">
+    <div class="uk-panel">
         <h3 class="my-heading-color uk-text-center"></h3>
         <table class="uk-table uk-table-divider uk-table-striped">
             <caption><span uk-icon="icon: bookmark; ratio:1.3"></span> 2018</caption>

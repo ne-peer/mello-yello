@@ -21,11 +21,9 @@
           <member-list></member-list>
       </div>
 
-      <div class="uk-container-expand uk-flex-center uk-padding-small bgc-section-one" uk-grid>
+      <div class="uk-container-expand uk-flex-center uk-margin-large-top uk-margin-xlarge-bottom" uk-grid>
         <div class="uk-width-2-3@s">
-          <div>
             <clan-rank></clan-rank>
-          </div>
         </div>
       </div>
 
@@ -47,9 +45,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.bgc-section-one {
-  /* background-color: #FFFDE7; */
-}
-</style>
