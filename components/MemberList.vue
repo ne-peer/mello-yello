@@ -7,14 +7,21 @@
           <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-auto">
-                  <img class="uk-border-circle" width="40" height="40" :src="'https://avatars.io/twitter/' + mem.tw">
+                <template v-if="mem.tw">
+                  <img class="uk-border-circle" width="50" height="50" :src="'https://avatars.io/twitter/' + mem.tw">
+                </template>
+                <template v-else>
+                  <img class="uk-border-circle" width="50" height="50" src="~/assets/img/person_128_gray.jpg">
+                </template>
               </div>
               <div class="uk-width-expand">
                   <h3 class="uk-card-title uk-margin-remove-bottom">{{ mem.name }}</h3>
                   <p class="uk-margin-remove-top">
                     <span class="uk-text-meta">{{ mem.date }}</span>
-                    <span class="icon-minus" uk-icon="icon: minus; ratio: 0.6"></span>
-                    <a :href="'https://twitter.com/' + mem.tw" target="_blank" class="tw">@{{ mem.tw }}</a>
+                    <template v-if="mem.tw !== undefined">
+                      <span class="icon-minus" uk-icon="icon: minus; ratio: 0.6"></span>
+                      <a :href="'https://twitter.com/' + mem.tw" target="_blank" class="tw">@{{ mem.tw }}</a>
+                    </template>
                   </p>
               </div>
             </div>
@@ -45,6 +52,66 @@ export default {
           name: "あやねる松本",
           date: "Founder",
           tw: "ne_peer"
+        },
+        {
+          name: "DIG",
+          date: "2018.03.21",
+          tw: "dig0703"
+        },
+        {
+          name: "みんち君",
+          date: "2018.03.21",
+          tw: "minchi95"
+        },
+        {
+          name: "たかしマン",
+          date: "2018.03.21",
+          tw: "shamo_takashi"
+        },
+        {
+          name: "あんじゃなふ",
+          date: "2018.03.25",
+          tw: "dignity_sann"
+        },
+        {
+          name: "ふらん",
+          date: "2018.05.13",
+          tw: "franpocky2959"
+        },
+        {
+          name: "ともろ",
+          date: "2018.05.25",
+          tw: "tomolo_korsk"
+        },
+        {
+          name: "水瀬いのり帝国",
+          date: "2018.05.25",
+          tw: undefined
+        },
+        {
+          name: "たまきち",
+          date: "2018.05.25",
+          tw: undefined
+        },
+        {
+          name: "らいー",
+          date: "2018.05.31",
+          tw: undefined
+        },
+        {
+          name: "ほたて",
+          date: "2018.05.31",
+          tw: undefined
+        },
+        {
+          name: "touboku",
+          date: "2018.06.02",
+          tw: "toubokueleven"
+        },
+        {
+          name: "シンク",
+          date: "2018.06.06",
+          tw: "sync_georges"
         }
       ]
     };
