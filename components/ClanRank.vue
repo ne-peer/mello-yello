@@ -7,13 +7,13 @@
             <thead>
                 <tr>
                     <th class="uk-text-center">Month</th>
-                    <th>Place</th>
+                    <th class="place">Place</th>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="(row, k) in transitions" :key="k" class="ranks">
                     <td class="uk-table-small uk-text-center">{{ row.month }}</td>
-                    <td class="uk-table-expand"><span :uk-icon="'icon:' + row.trans + '; ratio:1.3'" class="icon"></span>{{ row.rank }}</td>
+                    <td class="uk-table-expand place"><span :uk-icon="'icon:' + row.trans + '; ratio:1.3'" class="icon"></span>{{ row.rank }}</td>
                 </tr>
             </tbody>
         </table>
@@ -26,9 +26,10 @@ export default {
   data() {
     return {
       transitions: [
-        { month: "6", rank: "4000", trans: "arrow-up" },
-        { month: "5", rank: "6000", trans: "arrow-up" },
-        { month: "4", rank: "7000", trans: "arrow-up" }
+        { month: "6", rank: "集計中", trans: "-" },
+        { month: "5", rank: "4631", trans: "arrow-up" },
+        { month: "4", rank: "????", trans: "arrow-up" },
+        { month: "3", rank: "9843", trans: "arrow-up" }
       ]
     };
   }
@@ -51,5 +52,9 @@ caption {
 
 .icon {
   margin-right: 20px;
+}
+
+.place {
+  padding-left: 40px;
 }
 </style>
