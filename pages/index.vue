@@ -18,6 +18,11 @@
       </div>
 
       <div class="uk-container-expand">
+          <div class="uk-container-expand uk-flex-center" uk-grid>
+            <div class="uk-width-2-3@s members-head uk-text-center">
+              <span class="icon" uk-icon="icon: users; ratio: 2"></span>MEMBERS
+            </div>
+          </div>
           <member-list></member-list>
       </div>
 
@@ -45,3 +50,16 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.members-head {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-size: 16px;
+  font-weight: lighter;
+  padding-right: 10px;
+}
+
+.members-head .icon {
+  padding-right: 14px;
+}
+</style>
