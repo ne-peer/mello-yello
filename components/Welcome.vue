@@ -2,8 +2,8 @@
   <div>
     <div class="uk-card uk-card-default my-radius">
         <div class="uk-card-media-top">
-            <!-- <img src="https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg" alt="mello-yello" class="my-radius-top"> -->
-            <img src="http://via.placeholder.com/533x533" alt="mello-yello" class="my-radius-top">
+            <img src="https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg" alt="mello-yello" class="my-radius-top">
+            <!-- <img src="http://via.placeholder.com/533x533" alt="mello-yello" class="my-radius-top"> -->
         </div>
         <div class="uk-card-body">
             <h3 class="uk-card-title">Hello!</h3>
