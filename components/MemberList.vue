@@ -112,7 +112,12 @@ export default {
           name: "シンク",
           date: "2018.06.06",
           tw: "sync_georges"
-        }
+        },
+        {
+          name: "ふじおか",
+          date: "2018.06.16",
+          tw: "fuziokasouth"
+        },
       ]
     };
   }
