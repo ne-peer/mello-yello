@@ -32,6 +32,12 @@
         </div>
       </div>
 
+      <div class="uk-container-expand">
+        <div class="uk-container-expand uk-flex-center" uk-grid>
+          <!-- <information-log></information-log> -->
+        </div>
+      </div>
+
     </div>
 </template>
 
@@ -40,13 +46,15 @@ import MyNavbar from "~/components/MyNavbar.vue";
 import Welcome from "~/components/Welcome.vue";
 import MemberList from "~/components/MemberList.vue";
 import ClanRank from "~/components/ClanRank.vue";
+import InformationLog from "~/components/InformationLog.vue";
 
 export default {
   components: {
     MyNavbar,
     Welcome,
     MemberList,
-    ClanRank
+    ClanRank,
+    InformationLog
   }
 };
 </script>
