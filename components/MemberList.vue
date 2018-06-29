@@ -1,7 +1,7 @@
 <template>
   <div class="uk-padding-small">
 
-    <div class="uk-grid-small uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+    <div class="uk-grid-small uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card; row: false">
       <div v-for="(mem, k) in members" :key="k">
         <div class="uk-card uk-card-default my-radius">
           <div class="uk-card-header">
@@ -145,5 +145,9 @@ export default {
 
 a.tw {
   font-size: 12px;
+}
+
+.uk-card-default .uk-card-header {
+  border-bottom: none;
 }
 </style>
