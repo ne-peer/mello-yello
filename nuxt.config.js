@@ -30,6 +30,7 @@ module.exports = {
     { src: '~plugins/uikit.bundle', ssr: false },
     // { src: '~plugins/vuetify', ssr: false }
   ],
+  modules: ['nuxt-material-design-icons'],
   /*
   ** Customize the progress bar color
   */
