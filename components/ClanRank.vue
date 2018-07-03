@@ -3,7 +3,6 @@
     <div class="uk-panel">
         <h3 class="my-heading-color uk-text-center"></h3>
         <table class="uk-table uk-table-divider uk-table-striped">
-            <caption><span uk-icon="icon: bookmark; ratio:1.3"></span> 2018</caption>
             <thead>
                 <tr>
                     <th class="uk-text-center">Month</th>
@@ -12,7 +11,7 @@
             </thead>
             <tbody>
                 <tr v-for="(row, k) in transitions" :key="k" class="ranks">
-                    <td class="uk-table-small uk-text-center">{{ row.month }}</td>
+                    <td class="uk-table-small uk-text-center month-th">{{ row.month }}</td>
                     <td class="uk-table-expand place">
                       <p>
                         <i class="material-icons">{{ row.trans }}</i>
@@ -32,9 +31,9 @@ export default {
   data() {
     return {
       transitions: [
-        { month: "5", rank: "4631", trans: "trending_up", note: "(↑306)" },
-        { month: "4", rank: "4937", trans: "trending_up", note: "(↑4906)" },
-        { month: "3", rank: "9843", trans: "trending_up", note: "(new)" }
+        { month: "'18/05", rank: "4631", trans: "trending_up", note: "(↑306)" },
+        { month: "'18/04", rank: "4937", trans: "trending_up", note: "(↑4906)" },
+        { month: "'18/03", rank: "9843", trans: "trending_up", note: "(new)" }
       ]
     };
   }
@@ -76,6 +75,10 @@ i {
   padding-left: 4px;
   font-size: 12px;
   color: #999999;
+}
+
+.month-th {
+  letter-spacing: 2px;
 }
 
 span.trending_up {

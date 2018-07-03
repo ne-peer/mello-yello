@@ -26,14 +26,20 @@
           <member-list></member-list>
       </div>
 
-      <div class="uk-container-expand uk-flex-center uk-margin-large-top uk-margin-xlarge-bottom" uk-grid>
+      <div class="uk-container-expand uk-flex-center uk-margin-large-top" uk-grid>
         <div class="uk-width-2-3@s">
+            <div class="members-head uk-text-center">
+              <span class="icon" uk-icon="icon: bookmark; ratio: 1.6"></span>CLAN RANK
+            </div>
             <clan-rank></clan-rank>
         </div>
       </div>
 
-      <div class="uk-container-expand">
-        <div class="uk-container-expand uk-flex-center" uk-grid>
+      <div class="uk-container-expand uk-flex-center uk-margin-large-top" uk-grid>
+        <div class="uk-width-2-3@s">
+          <div class="members-head uk-text-center" style="margin-bottom:28px;">
+            <span class="icon" uk-icon="icon: history; ratio: 1.6"></span>CLAN BATTLE HISTORY
+          </div>
           <!-- <information-log></information-log> -->
           <clan-history></clan-history>
         </div>
@@ -64,7 +70,8 @@ export default {
 
 <style scoped>
 .members-head {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   font-size: 16px;
   font-weight: lighter;
   padding-right: 10px;
