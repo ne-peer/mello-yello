@@ -31,9 +31,10 @@ export default {
   data() {
     return {
       transitions: [
+        { month: "'18/06", rank: "2962", trans: "trending_up", note: "(↑1669)" },
         { month: "'18/05", rank: "4631", trans: "trending_up", note: "(↑306)" },
-        { month: "'18/04", rank: "4937", trans: "trending_up", note: "(↑4906)" },
-        { month: "'18/03", rank: "9843", trans: "trending_up", note: "(new)" }
+        { month: "'18/04", rank: "4937", trans: "trending_up", note: "(↑4300)" },
+        { month: "'18/03", rank: "9237", trans: "trending_up", note: "(new)" }
       ]
     };
   }
@@ -82,10 +83,10 @@ i {
 }
 
 span.trending_up {
-  color: hsl(348, 100%, 61%);
+  color: #69F0AE;
 }
 
 span.trending_down {
-  color: hsl(217, 71%, 53%);
+  color: #EF9A9A;
 }
 </style>
