@@ -74,6 +74,11 @@ export default {
           tw: "dignity_sann"
         },
         {
+          name: "かわい",
+          date: "2018.05.10",
+          tw: "kawaisou_bunjy"
+        },
+        {
           name: "ふらん",
           date: "2018.05.13",
           tw: "franpocky2959"
@@ -107,6 +112,11 @@ export default {
           name: "touboku",
           date: "2018.06.02",
           tw: "toubokueleven"
+        },
+        {
+          name: "イエスタカス",
+          date: "2018.06.03",
+          tw: "tonio_yoi_p"
         },
         {
           name: "シンク",
