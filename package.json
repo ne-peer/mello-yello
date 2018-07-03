@@ -13,9 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "chart.js": "^2.7.2",
     "nuxt": "^1.0.0",
     "nuxt-material-design-icons": "^1.0.4",
-    "uikit": "^3.0.0-rc.5"
+    "uikit": "^3.0.0-rc.5",
+    "vue-chartjs": "^3.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

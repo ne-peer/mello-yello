@@ -35,6 +35,7 @@
       <div class="uk-container-expand">
         <div class="uk-container-expand uk-flex-center" uk-grid>
           <!-- <information-log></information-log> -->
+          <clan-history></clan-history>
         </div>
       </div>
 
@@ -46,6 +47,7 @@ import MyNavbar from "~/components/MyNavbar.vue";
 import Welcome from "~/components/Welcome.vue";
 import MemberList from "~/components/MemberList.vue";
 import ClanRank from "~/components/ClanRank.vue";
+import ClanHistory from "~/components/ClanHistory.vue";
 import InformationLog from "~/components/InformationLog.vue";
 
 export default {
@@ -54,6 +56,7 @@ export default {
     Welcome,
     MemberList,
     ClanRank,
+    ClanHistory,
     InformationLog
   }
 };

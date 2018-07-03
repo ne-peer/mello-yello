@@ -28,6 +28,7 @@ module.exports = {
   ],
   plugins: [
     { src: '~plugins/uikit.bundle', ssr: false },
+    { src: '~plugins/chartjs', ssr: false },
     // { src: '~plugins/vuetify', ssr: false }
   ],
   modules: ['nuxt-material-design-icons'],
@@ -39,6 +40,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['chart.js'],
     /*
     ** Run ESLint on save
     */
