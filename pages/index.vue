@@ -4,7 +4,7 @@
       <div class="uk-container-expand slope-bgc">
         <div class="slope-bgc-inner">
           <div class="uk-flex-center" uk-grid>
-            <div class="uk-width-1-2@s" style="padding-right:20px">
+            <div style="padding-right:20px">
               <header>
                 <my-navbar></my-navbar>
               </header>
