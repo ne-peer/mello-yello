@@ -12,27 +12,27 @@ export default {
     return {
       showLine: true,
       lineData: {
-        labels: ["3月", "4月", "5月", "6月"],
+        labels: ["3月", "4月", "5月", "6月", "7月"],
         datasets: [
           {
             label: "総ダメージ",
             data: [12512937, 44816863, 63819535, 107432030],
             borderColor: "rgba(255,214,0,1)",
             backgroundColor: "rgba(255,214,0,0.2)",
-            pointRadius: [7, 7, 7, 7],
-            pointHitRadius: [7, 7, 7, 7],
-            pointHoverRadius: [7, 7, 7, 7],
+            pointRadius: [7, 7, 7, 7, 7],
+            pointHitRadius: [7, 7, 7, 7, 7],
+            pointHoverRadius: [7, 7, 7, 7, 7],
             yAxisID: "y-axis-1"
           },
           {
             label: "人数",
-            data: [8, 8, 18, 19],
+            data: [8, 8, 18, 19, 20],
             borderColor: "rgba(250,112,154,0.8)",
             backgroundColor: "rgba(0,0,0,0)",
             lineTension: 0,
-            pointRadius: [7, 7, 7, 7],
-            pointHitRadius: [7, 7, 7, 7],
-            pointHoverRadius: [7, 7, 7, 7],
+            pointRadius: [7, 7, 7, 7, 7],
+            pointHitRadius: [7, 7, 7, 7, 7],
+            pointHoverRadius: [7, 7, 7, 7, 7],
             yAxisID: "y-axis-2"
           }
         ]
