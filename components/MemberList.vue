@@ -17,9 +17,9 @@
                   </template>
                 </div>
                 <div class="uk-width-expand">
-                    <h3 class="uk-card-title uk-margin-remove-bottom">{{ mem.name }}</h3>
+                    <h3 class="uk-card-title uk-margin-remove-bottom" style="color:#888">{{ mem.name }}</h3>
                     <p class="uk-margin-remove-top">
-                      <span class="uk-text-meta">{{ mem.date }}</span>
+                      <span class="uk-text-meta my-text-join">{{ mem.date }}</span>
                       <template v-if="mem.tw !== undefined">
                         <span class="icon-minus" uk-icon="icon: minus; ratio: 0.6"></span>
                         <a :href="'https://twitter.com/' + mem.tw" target="_blank" class="tw">@{{ mem.tw }}</a>
@@ -48,13 +48,18 @@
                 </template>
               </div>
               <div class="uk-card-body uk-text-center uk-padding-remove-horizontal uk-padding-remove-top">
-                <p style="padding-top:16px">
-                  <span class="uk-text-meta">{{ mem.name }}</span>
-                  <template v-if="mem.tw !== undefined">
-                    <br>
-                    <a :href="'https://twitter.com/' + mem.tw" target="_blank" class="tw-small">@{{ mem.tw }}</a>
-                  </template>
-                </p>
+                <div style="padding-top:10px">
+                  <div class="uk-text-meta">
+                    {{ mem.name }}
+                  </div>
+                  <div class="mem-text-small s-padding-small">
+                    <span class="my-text-join">{{ mem.date }}</span>
+                    <template v-if="mem.tw !== undefined">
+                      <br>
+                      <a :href="'https://twitter.com/' + mem.tw" target="_blank">@{{ mem.tw }}</a>
+                    </template>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -187,7 +192,7 @@ export default {
 }
 
 .my-text-join {
-  color: #bfbfbf;
+  color: #dfdfdf;
 }
 
 .icon-minus {
@@ -199,11 +204,15 @@ a.tw {
   font-size: 12px;
 }
 
-a.tw-small {
+.mem-text-small {
   font-size: 8px;
 }
 
 .uk-card-default .uk-card-header {
   border-bottom: none;
+}
+
+.s-padding-small {
+  padding-top: 4px;
 }
 </style>
