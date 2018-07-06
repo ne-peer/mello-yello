@@ -31,7 +31,12 @@ module.exports = {
     { src: '~plugins/chartjs', ssr: false },
     // { src: '~plugins/vuetify', ssr: false }
   ],
-  modules: ['nuxt-material-design-icons'],
+  modules: [
+    'nuxt-material-design-icons',
+    '@nuxtjs/google-analytics', {
+      id: 'UA-80675437-4'
+    }
+  ],
   /*
   ** Customize the progress bar color
   */
