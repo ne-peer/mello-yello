@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'mello-yello',
+    title: 'メロウイエロー',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,7 +19,7 @@ module.exports = {
       { hid: 'og:image', name: 'og:image', content: 'https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico?v3' }
     ]
   },
   css: [
