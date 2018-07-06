@@ -7,16 +7,16 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'site_name', content: 'メロウイエロー' },
+      { name: 'google-site-verification', content: 'tVP1-RlCcz-LfeMza6YkpVyRdM_Vvi0rdMSsAyx4hJk' },
+      { hid: 'site_name', name: 'site_name', content: 'メロウイエロー' },
       { hid: 'description', name: 'description', content: 'Website of メロウイエロー clans in "princess connect re:dive".' },
-      { hid: 'image', content: 'https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg' },
-      { hid: 'google-site-verification', content: 'iGhRc61DwuR7ZSRhxXiZe9PT10azGlsZ51_OtyVzXbE' },
-      { hid: 'og:type', content: 'website' },
-      { hid: 'og:site_name', content: 'メロウイエロー' },
-      { hid: 'og:title', content: 'メロウイエロー' },
-      { hid: 'og:description', content: 'Website of メロウイエロー clans in "princess connect re:dive".' },
-      { hid: 'og:url', content: 'https://mello-yello.co' },
-      { hid: 'og:image', content: 'https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg' }
+      { hid: 'image', name: 'image', content: 'https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg' },
+      { hid: 'og:type', name: 'og:type', content: 'website' },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'メロウイエロー' },
+      { hid: 'og:title', name: 'og:title', content: 'メロウイエロー' },
+      { hid: 'og:description', name: 'og:description', content: 'Website of メロウイエロー clans in "princess connect re:dive".' },
+      { hid: 'og:url', name: 'og:url', content: 'https://mello-yello.co' },
+      { hid: 'og:image', name: 'og:image', content: 'https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -33,9 +33,7 @@ module.exports = {
   ],
   modules: [
     'nuxt-material-design-icons',
-    '@nuxtjs/google-analytics', {
-      id: 'UA-80675437-4'
-    }
+    ['@nuxtjs/google-analytics', { id: 'UA-80675437-4' }]
   ],
   /*
   ** Customize the progress bar color
