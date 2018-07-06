@@ -159,6 +159,11 @@ export default {
           name: "ふじおか",
           date: "2018.06.16",
           tw: "fuziokasouth"
+        },
+        {
+          name: "ゴイス",
+          date: "2018.07.12",
+          tw: "mateko_goisu"
         }
       ]
     };
