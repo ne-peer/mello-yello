@@ -30,7 +30,7 @@ export default {
 
     const list = [
       "https://pbs.twimg.com/media/DebJ9t5W4Aoka9o.jpg",
-      "https://pbs.twimg.com/media/DhT4lc4UwAEWbwW.jpg"
+      "https://www.lisani.jp/admin/wp-content/uploads/2018/06/1806261414-mk-001.jpg"
     ];
 
     const val = shuffle(list).pop();
