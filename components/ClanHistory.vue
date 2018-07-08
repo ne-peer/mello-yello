@@ -3,6 +3,7 @@
     <no-ssr>
       <line-chart v-if="showLine" :data="lineData" :options="options"></line-chart>
     </no-ssr>
+    <p class="uk-text-right desc">※ メモリにカーソルを合わせるかタップするとデータが見られます。</p>
   </div>
 </template>
 
@@ -49,7 +50,10 @@ export default {
               ticks: {
                 max: 120000000,
                 min: 0,
-                stepSize: 20000000
+                stepSize: 20000000,
+                callback: function(value, index, values) {
+                    return (value / 1000000) + 'M';
+                }
               }
             },
             {
@@ -73,5 +77,10 @@ export default {
 <style scoped>
 .chart-wrap {
   max-height: 400px;
+}
+
+.desc {
+  font-size: 10px;
+  color: #aaa;
 }
 </style>

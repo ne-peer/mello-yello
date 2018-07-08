@@ -35,7 +35,7 @@
         </div>
         <div class="uk-width-1-2@s uk-margin-large-top">
           <div class="members-head uk-text-center" style="margin-bottom:28px;">
-            <span class="icon" uk-icon="icon: history; ratio: 1.6"></span>CLAN BATTLE HISTORY
+            <span class="icon" uk-icon="icon: history; ratio: 1.6"></span>HISTORY
           </div>
           <!-- <information-log></information-log> -->
           <clan-history></clan-history>
