@@ -1,5 +1,10 @@
 <template>
   <div class="uk-padding-small">
+    <div class="uk-flex uk-flex-right">
+      <div class="uk-light uk-text-right mem-count">
+        19 / 30
+      </div>
+    </div>
 
     <!-- for desktop -->
     <div class="uk-visible@s">
@@ -123,7 +128,7 @@ export default {
         {
           name: "ともろ",
           date: "2018.05.25",
-          tw: "tomolo_korsk"
+          tw: "MH_tomolo"
         },
         {
           name: "水瀬いのり帝国",
@@ -214,5 +219,19 @@ a.tw {
 
 .s-padding-small {
   padding-top: 4px;
+}
+
+.mem-count {
+  padding: 2px 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: rgba(255,214,0,1);
+  background-color: rgba(255,214,0,0.2);
+
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-size: 10px;
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 </style>

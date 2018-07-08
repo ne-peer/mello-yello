@@ -26,7 +26,7 @@ export default {
           },
           {
             label: "人数",
-            data: [8, 8, 18, 19, 20],
+            data: [8, 8, 18, 19, 19],
             borderColor: "rgba(250,112,154,0.8)",
             backgroundColor: "rgba(0,0,0,0)",
             lineTension: 0,
