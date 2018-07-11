@@ -226,7 +226,7 @@ a.tw {
   margin-bottom: 10px;
   border-radius: 4px;
   color: rgba(255,214,0,1);
-  background-color: rgba(255,214,0,0.2);
+  background-color: rgba(255,214,0,0.1);
 
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
