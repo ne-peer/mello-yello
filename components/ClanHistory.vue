@@ -1,9 +1,8 @@
 <template>
   <div class="chart-wrap">
     <no-ssr>
-      <line-chart v-if="showLine" :data="lineData" :options="options"></line-chart>
+      <line-chart v-if="showLine" :data="lineData" :options="options" uk-tooltip="title: グラフをタップして詳細を確認"></line-chart>
     </no-ssr>
-    <p class="uk-text-right desc">※ メモリにカーソルを合わせるかタップするとデータが見られます。</p>
   </div>
 </template>
 
