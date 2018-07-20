@@ -2,7 +2,7 @@
   <div>
     <div class="uk-card uk-card-default my-radius img-max-width">
         <div class="uk-card-media-top">
-            <img :src="imageUrl" alt="mello-yello" class="my-radius-top">
+            <img class="my-radius-top" :data-src="imageUrl" width="550" height="550" alt="mello-yello" uk-img>
         </div>
         <div class="uk-card-body welcome">
             <h3 class="uk-card-title">Hello!</h3>

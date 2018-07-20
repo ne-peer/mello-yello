@@ -15,7 +15,7 @@
               <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
                   <template v-if="mem.tw">
-                    <img class="uk-border-circle" width="50" height="50" :src="'https://avatars.io/twitter/' + mem.tw">
+                    <img class="uk-border-circle" :data-src="'https://avatars.io/twitter/' + mem.tw" width="50" height="50" alt="" uk-img>
                   </template>
                   <template v-else>
                     <img class="uk-border-circle" width="50" height="50" src="~/assets/img/person_128_gray.jpg">
