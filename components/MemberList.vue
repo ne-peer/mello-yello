@@ -15,7 +15,11 @@
               <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
                   <template v-if="mem.tw">
-                    <img class="uk-border-circle" :data-src="'https://avatars.io/twitter/' + mem.tw" width="50" height="50" alt="" uk-img>
+                    <div v-lazy-container="{ selector: 'img' }">
+                      <img class="uk-border-circle" height="50" width="50"
+                        :data-src="'https://avatars.io/twitter/' + mem.tw"
+                        :data-error="require('~/assets/img/person_128_gray.jpg')">
+                    </div>
                   </template>
                   <template v-else>
                     <img class="uk-border-circle" width="50" height="50" src="~/assets/img/person_128_gray.jpg">
@@ -46,7 +50,11 @@
             <div class="uk-card uk-card-hover">
               <div class="uk-card-media-top uk-flex uk-flex-center" style="height:60px;">
                 <template v-if="mem.tw">
-                  <img class="uk-border-circle" height="60" width="60" :src="'https://avatars.io/twitter/' + mem.tw">
+                  <div v-lazy-container="{ selector: 'img' }">
+                    <img class="uk-border-circle" height="60" width="60"
+                      :data-src="'https://avatars.io/twitter/' + mem.tw"
+                      :data-error="require('~/assets/img/person_128_gray.jpg')">
+                  </div>
                 </template>
                 <template v-else>
                   <img class="uk-border-circle" width="60" height="60" src="~/assets/img/person_128_gray.jpg">

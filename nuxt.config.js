@@ -29,6 +29,7 @@ module.exports = {
   plugins: [
     { src: '~plugins/uikit.bundle', ssr: false },
     { src: '~plugins/chartjs', ssr: false },
+    { src: '~plugins/vue-lazyload', ssr: false },
     // { src: '~plugins/vuetify', ssr: false }
   ],
   modules: [

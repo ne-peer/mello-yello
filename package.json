@@ -19,7 +19,8 @@
     "nuxt": "^1.0.0",
     "nuxt-material-design-icons": "^1.0.4",
     "uikit": "^3.0.0-rc.5",
-    "vue-chartjs": "^3.3.2"
+    "vue-chartjs": "^3.3.2",
+    "vue-lazyload": "^1.2.6"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
