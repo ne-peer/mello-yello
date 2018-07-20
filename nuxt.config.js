@@ -33,8 +33,12 @@ module.exports = {
   ],
   modules: [
     'nuxt-material-design-icons',
-    ['@nuxtjs/google-analytics', { id: 'UA-80675437-4' }]
+    ['@nuxtjs/google-analytics', { id: 'UA-80675437-4' }],
+    '@nuxtjs/pwa',
   ],
+  workbox: {
+    dev: true,
+  },
   /*
   ** Customize the progress bar color
   */
@@ -57,5 +61,16 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  manifest: {
+    name: 'メロウイエロー',
+    short_name: 'メロウイエロー',
+    title: 'メロウイエロー',
+    'og:title': 'メロウイエロー',
+    description: 'PWATest',
+    'og:description': 'Website of メロウイエロー clans in "princess connect re:dive".',
+    lang: 'ja',
+    theme_color: '#FFF59D',
+    background_color: '#FFFFFF'
+  },
 }
