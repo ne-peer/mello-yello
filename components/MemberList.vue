@@ -225,8 +225,8 @@ a.tw {
   padding: 2px 8px;
   margin-bottom: 10px;
   border-radius: 4px;
-  color: rgba(255,214,0,1);
-  background-color: rgba(255,214,0,0.1);
+  color: #ffffff;
+  background-color: rgba(255,214,0,1);
 
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
