@@ -8,12 +8,12 @@
           <div class="uk-card-header">
             <div class="summary uk-text-center uk-padding-small">
               <p class="title uk-margin-remove">
-                <span class="size-l uk-visible@s">2962</span>
-                <span class="size-s uk-hidden@s">2962</span>
+                <span class="size-l uk-visible@s">18</span>
+                <span class="size-s uk-hidden@s">18</span>
               </p>
               <p class="desc uk-margin-remove">
-                <span class="size-l uk-visible@s">RANK</span>
-                <span class="size-s uk-hidden@s">RANK</span>
+                <span class="size-l uk-visible@s">Members</span>
+                <span class="size-s uk-hidden@s">Members</span>
               </p>
             </div>
           </div>
@@ -24,12 +24,12 @@
           <div class="uk-card-header">
             <div class="summary uk-text-center uk-padding-small">
               <p class="title uk-margin-remove">
-                <span class="size-l uk-visible@s">18</span>
-                <span class="size-s uk-hidden@s">18</span>
+                <span class="size-l uk-visible@s">2962</span>
+                <span class="size-s uk-hidden@s">2962</span>
               </p>
               <p class="desc uk-margin-remove">
-                <span class="size-l uk-visible@s">MEMBERS</span>
-                <span class="size-s uk-hidden@s">MEMBERS</span>
+                <span class="size-l uk-visible@s">Rank</span>
+                <span class="size-s uk-hidden@s">Rank</span>
               </p>
             </div>
           </div>
@@ -43,8 +43,7 @@
 
 <style scoped>
 .title {
-  /* padding-top: 14px; */
-  color: #F9A825;
+  color: #f57f17;
 }
 
 .title .size-l {
@@ -57,8 +56,9 @@
 
 .desc {
   color: rgba(255, 214, 0, 1);
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-weight: lighter;
   letter-spacing: 2px;
 }
