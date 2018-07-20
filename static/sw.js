@@ -8,15 +8,15 @@ const workboxSW = new self.WorkboxSW({
 
 workboxSW.precache([
   {
-    "url": "/_nuxt/app.c85159e807562b4914c7.js",
-    "revision": "e7ef9048ba8f1b3987df37b8af8849ce"
+    "url": "/_nuxt/app.2ea4c0d2a9b3aabc8712.js",
+    "revision": "3c0173d17aedd1380b92663dd3b33e0d"
   },
   {
     "url": "/_nuxt/layouts/default.a0133f0c9939d0f72be4.js",
     "revision": "ed49f0c37bf97c117626f639b43cdf81"
   },
   {
-    "url": "/_nuxt/manifest.af3b4499eb1f04529cda.js",
+    "url": "/_nuxt/manifest.903cf793349fd4d4c4b3.js",
     "revision": "ed81e839e0a2b0828d7cf520cef1e929"
   },
   {
