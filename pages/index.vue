@@ -10,7 +10,7 @@
               </header>
 
               <div>
-                <!-- <welcome></welcome> -->
+                <welcome></welcome>
               </div>
             </div>
           </div>
