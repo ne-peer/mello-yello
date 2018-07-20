@@ -10,7 +10,7 @@
               </header>
 
               <div>
-                <welcome></welcome>
+                <!-- <welcome></welcome> -->
               </div>
             </div>
           </div>
@@ -18,6 +18,15 @@
       </div>
 
       <div class="uk-container-expand">
+          <div class="uk-container-expand uk-flex-center" uk-grid>
+            <div class="members-head uk-text-center uk-margin-bottom">
+              <span class="icon" uk-icon="icon: quote-right; ratio: 1.8"></span>DASHBOARD
+            </div>
+          </div>
+          <clan-summary></clan-summary>
+      </div>
+
+      <div class="uk-container-expand uk-margin-large-top">
           <div class="uk-container-expand uk-flex-center" uk-grid>
             <div class="uk-width-2-3@s members-head uk-text-center">
               <span class="icon" uk-icon="icon: users; ratio: 2"></span>MEMBERS
@@ -52,6 +61,7 @@ import MemberList from "~/components/MemberList.vue";
 import ClanRank from "~/components/ClanRank.vue";
 import ClanHistory from "~/components/ClanHistory.vue";
 import InformationLog from "~/components/InformationLog.vue";
+import ClanSummary from "~/components/ClanSummary.vue";
 
 export default {
   components: {
@@ -60,7 +70,8 @@ export default {
     MemberList,
     ClanRank,
     ClanHistory,
-    InformationLog
+    InformationLog,
+    ClanSummary
   }
 };
 </script>
