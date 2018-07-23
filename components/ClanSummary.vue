@@ -55,7 +55,7 @@
 }
 
 .desc {
-  color: rgba(255, 214, 0, 1);
+  /* color: rgba(255, 214, 0, 1); */
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
