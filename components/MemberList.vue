@@ -2,7 +2,7 @@
   <div class="uk-padding-small">
     <div class="uk-flex uk-flex-right">
       <div class="uk-light uk-text-right mem-count">
-        19 / 30
+        20 / 30
       </div>
     </div>
 
@@ -182,6 +182,11 @@ export default {
           name: "ゴイス",
           date: "2018.07.12",
           tw: "mateko_goisu"
+        },
+        {
+          name: "ロリ巨乳",
+          date: "2018.07.22",
+          tw: "Nyamuz"
         }
       ]
     };
@@ -239,7 +244,6 @@ a.tw {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   font-size: 10px;
-  font-weight: lighter;
   letter-spacing: 1px;
 }
 </style>
