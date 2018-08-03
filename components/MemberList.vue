@@ -10,7 +10,7 @@
     <div class="uk-visible@s">
       <div class="uk-grid-small uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card; row: false">
         <div v-for="(mem, k) in members" :key="k">
-          <div class="uk-card uk-card-default ">
+          <div class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-left-small">
             <div class="uk-card-header">
               <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
@@ -47,7 +47,7 @@
       <div class="uk-grid-small uk-child-width-1-3 uk-margin-top" uk-grid>
         <div v-for="(mem, k) in members" :key="k">
           <div>
-            <div class="uk-card uk-card-hover">
+            <div class="uk-card uk-card-hover" uk-scrollspy="cls:uk-animation-slide-left-small">
               <div class="uk-card-media-top uk-flex uk-flex-center" style="height:60px;">
                 <template v-if="mem.tw">
                   <div v-lazy-container="{ selector: 'img' }">
