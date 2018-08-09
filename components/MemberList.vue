@@ -31,7 +31,7 @@
                       <span class="uk-text-meta my-text-join">{{ mem.date }}</span>
                       <template v-if="mem.tw !== undefined">
                         <span class="icon-minus" uk-icon="icon: minus; ratio: 0.6"></span>
-                        <a :href="'https://twitter.com/' + mem.tw" target="_blank" class="tw">@{{ mem.tw }}</a>
+                        <a :href="'https://twitter.com/' + mem.tw" target="_blank" rel="noopener" class="tw">@{{ mem.tw }}</a>
                       </template>
                     </p>
                 </div>
