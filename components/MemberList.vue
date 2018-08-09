@@ -47,7 +47,7 @@
       <div class="uk-grid-small uk-child-width-1-3 uk-margin-top" uk-grid>
         <div v-for="(mem, k) in members" :key="k">
           <div>
-            <div class="uk-card uk-card-hover" uk-scrollspy="cls:uk-animation-slide-left-small">
+            <div class="uk-card uk-card-hover">
               <div class="uk-card-media-top uk-flex uk-flex-center" style="height:60px;">
                 <template v-if="mem.tw">
                   <div v-lazy-container="{ selector: 'img' }">
