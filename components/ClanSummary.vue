@@ -1,7 +1,7 @@
 <template>
 
-  <div class="uk-width-1-3@lx uk-width-1-2@m uk-padding-small" style="margin:0 auto;">
-    <div class="uk-flex uk-flex-center uk-grid uk-grid-small uk-child-width-1-2" uk-grid uk-height-match="target: > div > .uk-card; row: false">
+  <div class="uk-width-1-3@lx uk-width-1-2@m uk-padding-small" style="margin:0 auto;" uk-height-match="target: > div > div > .uk-card; row: false">
+    <div class="uk-flex uk-flex-center uk-grid uk-grid-small uk-child-width-1-2" uk-grid uk-height-match="target: > div > div > div > .summary">
 
       <div>
         <div class="uk-card uk-card-default my-radius">
@@ -12,8 +12,8 @@
                 <span class="size-s uk-hidden@s">20</span>
               </p>
               <p class="desc uk-margin-remove">
-                <span class="size-l uk-visible@s">Members</span>
-                <span class="size-s uk-hidden@s">Members</span>
+                <span class="size-l uk-visible@s">MEMBERS</span>
+                <span class="size-s uk-hidden@s">MEMBERS</span>
               </p>
             </div>
           </div>
@@ -28,8 +28,8 @@
                 <span class="size-s uk-hidden@s">2962</span>
               </p>
               <p class="desc uk-margin-remove">
-                <span class="size-l uk-visible@s">Rank</span>
-                <span class="size-s uk-hidden@s">Rank</span>
+                <span class="size-l uk-visible@s">CURRENT PLACE</span>
+                <span class="size-s uk-hidden@s">CURRENT PLACE</span>
               </p>
             </div>
           </div>

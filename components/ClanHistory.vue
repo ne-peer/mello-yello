@@ -16,7 +16,7 @@ export default {
         datasets: [
           {
             label: "総ダメージ",
-            data: [12512937, 44816863, 63819535, 107432030],
+            data: [12512937, 44816863, 63819535, 107432030, 161533666],
             borderColor: "rgba(255,214,0,1)",
             backgroundColor: "rgba(255,214,0,0.2)",
             pointRadius: [7, 7, 7, 7, 7],
@@ -26,7 +26,7 @@ export default {
           },
           {
             label: "人数",
-            data: [8, 8, 18, 19, 19],
+            data: [8, 8, 18, 19, 20],
             borderColor: "rgba(250,112,154,0.8)",
             backgroundColor: "rgba(0,0,0,0)",
             lineTension: 0,
@@ -47,7 +47,7 @@ export default {
               type: "linear",
               position: "left",
               ticks: {
-                max: 120000000,
+                max: 180000000,
                 min: 0,
                 stepSize: 20000000,
                 callback: function(value, index, values) {
@@ -62,7 +62,7 @@ export default {
               ticks: {
                 max: 30,
                 min: 0,
-                stepSize: 15
+                stepSize: 10
               }
             }
           ]
