@@ -16,13 +16,13 @@
                 <div class="uk-width-auto">
                   <template v-if="mem.tw">
                     <div v-lazy-container="{ selector: 'img' }">
-                      <img class="uk-border-circle" height="50" width="50"
+                      <img class="uk-border-circle" height="50" width="50" alt="default member icon"
                         :data-src="'https://avatars.io/twitter/' + mem.tw"
                         :data-error="require('~/assets/img/person_128_gray.jpg')">
                     </div>
                   </template>
                   <template v-else>
-                    <img class="uk-border-circle" width="50" height="50" src="~/assets/img/person_128_gray.jpg">
+                    <img class="uk-border-circle" width="50" height="50" src="~/assets/img/person_128_gray.jpg" :alt="mem.tw + ' icon'">
                   </template>
                 </div>
                 <div class="uk-width-expand">
@@ -51,13 +51,13 @@
               <div class="uk-card-media-top uk-flex uk-flex-center" style="height:60px;">
                 <template v-if="mem.tw">
                   <div v-lazy-container="{ selector: 'img' }">
-                    <img class="uk-border-circle" height="60" width="60"
+                    <img class="uk-border-circle" height="60" width="60" alt="default member icon"
                       :data-src="'https://avatars.io/twitter/' + mem.tw"
                       :data-error="require('~/assets/img/person_128_gray.jpg')">
                   </div>
                 </template>
                 <template v-else>
-                  <img class="uk-border-circle" width="60" height="60" src="~/assets/img/person_128_gray.jpg">
+                  <img class="uk-border-circle" width="60" height="60" src="~/assets/img/person_128_gray.jpg" :alt="mem.tw + ' icon'">
                 </template>
               </div>
               <div class="uk-card-body uk-text-center uk-padding-remove-horizontal uk-padding-remove-top">
