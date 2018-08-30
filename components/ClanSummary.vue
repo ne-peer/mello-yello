@@ -8,8 +8,8 @@
           <div class="uk-card-header">
             <div class="summary uk-text-center uk-padding-small">
               <p class="title uk-margin-remove">
-                <span class="size-l uk-visible@s">20</span>
-                <span class="size-s uk-hidden@s">20</span>
+                <span class="size-l uk-visible@s">22</span>
+                <span class="size-s uk-hidden@s">22</span>
               </p>
               <p class="desc uk-margin-remove">
                 <span class="size-l uk-visible@s">MEMBERS</span>
