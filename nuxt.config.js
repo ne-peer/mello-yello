@@ -86,7 +86,7 @@ module.exports = {
     publicPath: "//_nuxt/",
     start_url: "/",
     display: "standalone",
-    background_color: "#FFFFFF",
+    background_color: "#FFFDE7",
     theme_color: "#FFF59D",
     lang: "ja",
     title: "メロウイエロー",
