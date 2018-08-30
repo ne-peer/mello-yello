@@ -187,6 +187,16 @@ export default {
           name: "ロリ巨乳",
           date: "2018.07.22",
           tw: "Nyamuz"
+        },
+        {
+          name: "ふGこ",
+          date: "2018.08.23",
+          tw: "FuGKo"
+        },
+        {
+          name: "ゆうびーん",
+          date: "2018.08.25",
+          tw: undefined
         }
       ]
     };
