@@ -2,7 +2,7 @@
   <div class="uk-padding-small">
     <div class="uk-flex uk-flex-right">
       <div class="uk-light uk-text-right mem-count">
-        22 / 30
+        23 / 30
       </div>
     </div>
 
@@ -197,6 +197,11 @@ export default {
           name: "ゆうびーん",
           date: "2018.08.25",
           tw: undefined
+        },
+        {
+          name: "とうふ",
+          date: "2018.09.05",
+          tw: "goldmedal0123"
         }
       ]
     };
