@@ -29,7 +29,7 @@
                     <h3 class="uk-card-title uk-margin-remove-bottom" style="color:#888">{{ mem.name }}</h3>
                     <p class="uk-margin-remove-top">
                       <span class="uk-text-meta my-text-join">{{ mem.joinDate }}</span>
-                      <template v-if="mem.tw !== undefined">
+                      <template v-if="mem.tw !== null">
                         <span class="icon-minus" uk-icon="icon: minus; ratio: 0.6"></span>
                         <a :href="'https://twitter.com/' + mem.tw" target="_blank" rel="noopener" class="tw">@{{ mem.tw }}</a>
                       </template>
@@ -67,7 +67,7 @@
                   </div>
                   <div class="mem-text-small s-padding-small">
                     <span class="my-text-join">{{ mem.joinDate }}</span>
-                    <template v-if="mem.tw !== undefined">
+                    <template v-if="mem.tw !== null">
                       <br>
                       <a :href="'https://twitter.com/' + mem.tw" target="_blank">@{{ mem.tw }}</a>
                     </template>
