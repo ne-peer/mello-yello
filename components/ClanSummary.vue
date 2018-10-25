@@ -8,8 +8,8 @@
           <div class="uk-card-header">
             <div class="summary uk-text-center uk-padding-small">
               <p class="title uk-margin-remove">
-                <span class="size-l uk-visible@s">24</span>
-                <span class="size-s uk-hidden@s">24</span>
+                <span class="size-l uk-visible@s">{{ membersCount }}</span>
+                <span class="size-s uk-hidden@s">{{ membersCount }}</span>
               </p>
               <p class="desc uk-margin-remove">
                 <span class="size-l uk-visible@s">MEMBERS</span>
@@ -40,6 +40,13 @@
   </div>
 
 </template>
+
+<script>
+export default {
+  // https://github.com/nuxt/nuxt.js/issues/297#issuecomment-281711613
+  props: ["membersCount"]
+};
+</script>
 
 <style scoped>
 .title {
