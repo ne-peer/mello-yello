@@ -23,7 +23,7 @@
               <span class="icon" uk-icon="icon: quote-right; ratio: 1.8"></span>DASHBOARD
             </div>
           </div>
-          <clan-summary></clan-summary>
+          <clan-summary :membersCount="membersCount"></clan-summary>
       </div>
 
       <div class="uk-container-expand uk-margin-large-top">
@@ -32,7 +32,7 @@
               <span class="icon" uk-icon="icon: users; ratio: 2"></span>MEMBERS
             </div>
           </div>
-          <member-list></member-list>
+          <member-list :members="members"></member-list>
       </div>
 
       <div class="uk-container-expand uk-flex-center uk-padding-small" uk-grid>
@@ -46,7 +46,6 @@
           <div class="members-head uk-text-center" style="margin-bottom:28px;">
             <span class="icon" uk-icon="icon: history; ratio: 1.6"></span>HISTORY
           </div>
-          <!-- <information-log></information-log> -->
           <clan-history></clan-history>
         </div>
       </div>
@@ -72,6 +71,14 @@ export default {
     ClanHistory,
     InformationLog,
     ClanSummary
+  },
+  data() {
+    return { members: [], membersCount: 0 }
+  },
+  async asyncData ({ app }) {
+    const memberListUrl = `https://gist.githubusercontent.com/ne-peer/b00023de73a1c4c6789eb06231b60439/raw`;
+    const list = await app.$axios.$get(memberListUrl).then(res => res.members);
+    return { members: list, membersCount: list.length };
   }
 };
 </script>
