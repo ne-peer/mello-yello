@@ -51,7 +51,8 @@ module.exports = {
   modules: [
     "nuxt-material-design-icons",
     ["@nuxtjs/google-analytics", { id: "UA-80675437-4" }],
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    '@nuxtjs/axios'
   ],
   workbox: {
     dev: true
