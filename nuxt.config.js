@@ -43,10 +43,9 @@ module.exports = {
   },
   css: ["assets/main.css", { src: "~assets/uikit.scss", lang: "scss" }],
   plugins: [
-    { src: "~plugins/uikit.bundle", ssr: false },
-    { src: "~plugins/chartjs", ssr: false },
-    { src: "~plugins/vue-lazyload", ssr: false }
-    // { src: '~plugins/vuetify', ssr: false }
+    { src: "~plugins/uikit.bundle.js", ssr: false },
+    { src: "~plugins/chartjs.js", ssr: false },
+    { src: "~plugins/vue-lazyload.js", ssr: false }
   ],
   modules: [
     "nuxt-material-design-icons",
