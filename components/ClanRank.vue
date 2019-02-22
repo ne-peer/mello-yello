@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       transitions: [
-        { month: "'18/01", rank: "3078", trans: "trending_down", note: "(↓170)" },
+        { month: "'19/01", rank: "3078", trans: "trending_down", note: "(↓170)" },
         { month: "'18/12", rank: "2908", trans: "trending_down", note: "(↓48)" },
         { month: "'18/11", rank: "2860", trans: "trending_down", note: "(↓448)" },
         { month: "'18/10", rank: "2412", trans: "trending_down", note: "(↓354)" },
