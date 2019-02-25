@@ -1,7 +1,12 @@
 <template>
-  <div>
+  <div uk-filter="target: .js-filter">
     <div class="uk-panel">
         <h3 class="my-heading-color uk-text-center"></h3>
+
+    <ul class="uk-subnav uk-subnav-pill">
+        <li uk-filter-control=".tag-old"><a href="#">old</a></li>
+    </ul>
+
         <table class="uk-table uk-table-divider uk-table-striped">
             <thead>
                 <tr>
@@ -9,8 +14,8 @@
                     <th class="place-th">Place</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr v-for="(row, k) in transitions" :key="k" class="ranks">
+            <tbody class="js-filter">
+                <tr v-for="(row, k) in transitions" :key="k" :class="{'tag-old':k > 4}">
                     <td class="uk-table-small uk-text-center month-th">{{ row.month }}</td>
                     <td class="uk-table-expand place">
                       <p>
