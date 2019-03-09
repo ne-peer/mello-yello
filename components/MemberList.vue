@@ -2,7 +2,7 @@
   <div class="uk-padding-small">
     <div class="uk-flex uk-flex-right">
       <div class="uk-light uk-text-right mem-count">
-        24 / 30
+        {{ membersCount }} / 30
       </div>
     </div>
 
@@ -86,7 +86,7 @@
 <script>
 export default {
   // https://github.com/nuxt/nuxt.js/issues/297#issuecomment-281711613
-  props: ["members"]
+  props: ["members", "membersCount"]
 };
 </script>
 
