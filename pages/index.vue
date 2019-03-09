@@ -32,7 +32,7 @@
               <span class="icon" uk-icon="icon: users; ratio: 2"></span>MEMBERS
             </div>
           </div>
-          <member-list :members="members"></member-list>
+          <member-list :members="members" :membersCount="membersCount"></member-list>
       </div>
 
       <div class="uk-container-expand uk-flex-center uk-padding-small" uk-grid>
@@ -76,7 +76,8 @@ export default {
     return { members: [], membersCount: 0 }
   },
   async asyncData ({ app }) {
-    const memberListUrl = `https://gist.githubusercontent.com/ne-peer/b00023de73a1c4c6789eb06231b60439/raw`;
+    const version = new Date().getTime();
+    const memberListUrl = `https://gist.githubusercontent.com/ne-peer/b00023de73a1c4c6789eb06231b60439/raw?{$version}`;
     const list = await app.$axios.$get(memberListUrl).then(res => res.members);
     return { members: list, membersCount: list.length };
   }

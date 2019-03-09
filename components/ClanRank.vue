@@ -1,7 +1,13 @@
 <template>
-  <div>
-    <div class="uk-panel">
+  <div style='min-height: 600px'>
+    <div class="uk-panel" uk-filter="target: .js-filter" >
         <h3 class="my-heading-color uk-text-center"></h3>
+
+        <ul class="uk-subnav uk-subnav-pill">
+            <li class="uk-active" uk-filter-control="[data-type='recent']"><a href="#">Recent</a></li>
+            <li uk-filter-control="[data-type='old']"><a href="#">Old</a></li>
+        </ul>
+
         <table class="uk-table uk-table-divider uk-table-striped">
             <thead>
                 <tr>
@@ -9,10 +15,10 @@
                     <th class="place-th">Place</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr v-for="(row, k) in transitions" :key="k" class="ranks">
-                    <td class="uk-table-small uk-text-center month-th">{{ row.month }}</td>
-                    <td class="uk-table-expand place">
+            <tbody class="js-filter">
+                <tr v-for="(row, k) in transitions" :key="k" class="ranks" v-bind:data-type="k < 5 ? 'recent':'old'">
+                    <td data-type="recent" class="uk-table-small uk-text-center month-th">{{ row.month }}</td>
+                    <td data-type="recent" class="uk-table-expand place">
                       <p>
                         <i class="material-icons">{{ row.trans }}</i>
                         <span :class="row.trans">{{ row.rank }}</span>
@@ -31,6 +37,7 @@ export default {
   data() {
     return {
       transitions: [
+        { month: "'19/02", rank: "2906", trans: "trending_up", note: "(↑172)" },
         { month: "'19/01", rank: "3078", trans: "trending_down", note: "(↓170)" },
         { month: "'18/12", rank: "2908", trans: "trending_down", note: "(↓48)" },
         { month: "'18/11", rank: "2860", trans: "trending_down", note: "(↓448)" },
