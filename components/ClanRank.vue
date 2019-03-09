@@ -1,6 +1,6 @@
 <template>
-  <div uk-filter="target: .js-filter">
-    <div class="uk-panel">
+  <div style='min-height: 600px'>
+    <div class="uk-panel" uk-filter="target: .js-filter" >
         <h3 class="my-heading-color uk-text-center"></h3>
 
         <ul class="uk-subnav uk-subnav-pill">
@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody class="js-filter">
-                <tr v-for="(row, k) in transitions" :key="k" v-bind:data-type="k < 5 ? 'recent':'old'">
+                <tr v-for="(row, k) in transitions" :key="k" class="ranks" v-bind:data-type="k < 5 ? 'recent':'old'">
                     <td data-type="recent" class="uk-table-small uk-text-center month-th">{{ row.month }}</td>
                     <td data-type="recent" class="uk-table-expand place">
                       <p>
@@ -37,6 +37,7 @@ export default {
   data() {
     return {
       transitions: [
+        { month: "'19/02", rank: "2906", trans: "trending_up", note: "(↑172)" },
         { month: "'19/01", rank: "3078", trans: "trending_down", note: "(↓170)" },
         { month: "'18/12", rank: "2908", trans: "trending_down", note: "(↓48)" },
         { month: "'18/11", rank: "2860", trans: "trending_down", note: "(↓448)" },
