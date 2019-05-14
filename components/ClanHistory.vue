@@ -12,11 +12,11 @@ export default {
     return {
       showLine: true,
       lineData: {
-        labels: ["3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月"],
+        labels: ["'18 3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "'19 1月", "2月", "3月", "4月"],
         datasets: [
           {
             label: "総ダメージ",
-            data: [12512937, 44816863, 63819535, 107432030, 161533666, 327817745, 452078196, 440643945, 351353401, 381312466, 402804732, 675076598],
+            data: [12512937, 44816863, 63819535, 107432030, 161533666, 327817745, 452078196, 440643945, 351353401, 381312466, 402804732, 675076598, 789072355, 857873726],
             borderColor: "rgba(255,214,0,1)",
             backgroundColor: "rgba(255,214,0,0.2)",
             pointRadius: 7,
@@ -26,7 +26,7 @@ export default {
           },
           {
             label: "人数",
-            data: [8, 8, 18, 19, 20, 23, 24, 24, 24, 24, 26, 27],
+            data: [3, 8, 18, 19, 20, 23, 24, 24, 24, 24, 26, 28, 30, 30],
             borderColor: "rgba(250,112,154,0.8)",
             backgroundColor: "rgba(0,0,0,0)",
             lineTension: 0,
@@ -47,9 +47,9 @@ export default {
               type: "linear",
               position: "left",
               ticks: {
-                max: 700000000,
+                max: 900000000,
                 min: 0,
-                stepSize: 50000000,
+                stepSize: 200000000,
                 callback: function(value, index, values) {
                     return (value / 1000000) + 'M';
                 }
@@ -62,7 +62,7 @@ export default {
               ticks: {
                 max: 30,
                 min: 0,
-                stepSize: 15
+                stepSize: 30
               }
             }
           ]
